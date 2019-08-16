@@ -1,0 +1,77 @@
+{"DsEquifaxSaida": {
+    "retequifax": [
+      {
+        "ok": true,
+        "numseqid-pj": "346311",
+        "nome-cliente": "VOLKSWAGEN CORRETORA DE SEGS",
+        "cod-retorno": "0",
+        "cod-acao": "0",
+        "desc-acao": "",
+        "trava": "FALSE",
+        "link": "7927277817eebbbb58492739yy793989yy296848yy1998bb974919bb79398939896989279938bb391778aa49883789599957aa2999399917279868aa974919yy792748jj48aa784917176899hh18qq48aa399927aa29993829aa99786838892949hhqq48aa296839178917hh2142qq48aa5837481749888939hhdveugsdvbybyqq48aa296839aa29682799299968hhdveugsdvbybyqq48aa296839aa99273799299968hheuqq48aa473898aa6878499899299968hhazqq48aa297859aa29587818hhgsaziqiqiqiqjpiqazazazbyaziqqq48aa37174998aa8939hh2162929241236292"
+      }
+    ],
+    "cadastro": [
+      {
+        "nome": "VOLKSWAGEN CORRETORA DE SEGS",
+        "cpfcnpj": "60888898000108",
+        "vlpatrliq": "0",
+        "vlcapital": "401071",
+        "dttransmissao": "21\/09\/18",
+        "atividade": "66223",
+        "descatividade": "CORRETORES E AGENTES DE SEGUROS",
+        "dtliberacao": "21\/09\/18",
+        "dtcriacao": "20\/07\/10",
+        "hrcriacao": "13:01:34",
+        "vlfatpresumido": "15000000",
+        "cod-retorno": "0",
+        "cod-acao": "0",
+        "des-natjurica": "",
+        "flgpep": "FALSE"
+      }
+    ],
+    "administrador": [
+      {
+        "cpf": "00061836508891",
+        "nome": "ANTONIO MANUEL RODRIGUES DE RESENDE",
+        "dttransm": "31\/08\/11",
+        "flgpep": "FALSE"
+      },
+      {
+        "cpf": "61836508891",
+        "nome": "ANTONIO MANUEL RODRIGUES DE RESENDE",
+        "dttransm": "20\/07\/10",
+        "flgpep": "FALSE"
+      },
+      {
+        "cpf": "87844923849",
+        "nome": "DECIO CARBONARI DE ALMEIDA",
+        "dttransm": "20\/07\/10",
+        "flgpep": "FALSE"
+      }
+    ],
+    "procurador": [
+      {
+        "cpf": "87844923849",
+        "nome": "DECIO CARBONARI DE ALMEIDA",
+        "dttransm": "27\/11\/10",
+        "flgpep": "FALSE"
+      }
+    ],
+    "controlador": [
+      {
+        "cpfpai": "60888898000108",
+        "cpf": "61836508891",
+        "nome": "ANTONIO MANUEL RODRIGUES DE RESENDE",
+        "dttransm": "20\/07\/10",
+        "flgpep": "TRUE"
+      },
+      {
+        "cpfpai": "60888898000108",
+        "cpf": "87844923849",
+        "nome": "DECIO CARBONARI DE ALMEIDA",
+        "dttransm": "20\/07\/10",
+        "flgpep": "FALSE"
+      }
+    ]
+  }}
