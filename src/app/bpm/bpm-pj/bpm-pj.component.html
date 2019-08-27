@@ -20,11 +20,14 @@
                         <!-- <label for="execContas">Executivo de Contas</label>
                         <input type="text" onchange="execContas()" id="execContas" name="execContas" class="form-control" [(ngModel)]="ExecutivoDeContas" [disabled]="disableInput()"> -->
 
-                        <mat-form-field class="example-full-width">
+                        <mat-form-field class="example-full-width" *ngIf="etapa===1">
                             <label for="executivodecontas">Executivo de Contas</label>
-                            <input #inputText name="executivodecontas" class="form-control" matInput [matAutocomplete]="auto" [(ngModel)]="nomeLista" maxlength="50" (keypress)="validarCaracter($event)">
+                            <input #inputText name="executivodecontas" class="form-control" matInput
+                                [matAutocomplete]="auto" [(ngModel)]="nomeLista" maxlength="50"
+                                (keypress)="validarCaracter($event)">
                             <mat-autocomplete #auto="matAutocomplete">
-                                <mat-option *ngFor="let corretor of corretoresLista" [value]="corretor" (click)="selecionarCorretor(corretor)">
+                                <mat-option *ngFor="let corretor of corretoresLista" [value]="corretor"
+                                    (click)="selecionarCorretor(corretor)">
                                     <span>{{ corretor.nomProdutor }}</span>
                                 </mat-option>
                             </mat-autocomplete>
@@ -33,6 +36,8 @@
 
                     </div>
                 </div>
+                <br>
+                <br>
                 <div class="grupoReprovar" *ngIf="etapa===1 || etapa===3 || etapa===4">
                     <button type="button" class="reprovar btn btn-danger bottom"
                         (click)="reprovaCadastro()">Reprovar</button>
@@ -50,7 +55,8 @@
                 <div class="form-group mt-3">
 
                     <label for="novaSucursal">Nova Sucursal</label>
-                    <select type="text" id="novaSucursal" name="novaSucursal" [(ngModel)]="sucursalSelecionada" class="form-control" >
+                    <select type="text" id="novaSucursal" name="novaSucursal" [(ngModel)]="sucursalSelecionada"
+                        class="form-control">
                         <option [ngValue]="ativa" *ngFor='let ativa of sucursaisAtivas'>
                             {{ ativa.NomeSucursal }}
                         </option>
@@ -76,13 +82,16 @@
                     Aprovação</button>
                 <div class="form-group mt-3">
                     <label for="voltarEtapa">Etapa de aprovação</label>
-                    <select type="text" id="voltarEtapa" name="voltarEtapa" class="form-control" [(ngModel)]="selecEtapa">
-                        <option *ngFor="let etapaSelecionada of listaEtapa" value="{{etapaSelecionada}}">{{etapaSelecionada}}</option>
+                    <select type="text" id="voltarEtapa" name="voltarEtapa" class="form-control"
+                        [(ngModel)]="selecEtapa">
+                        <option *ngFor="let etapaSelecionada of listaEtapa" value="{{etapaSelecionada}}">
+                            {{etapaSelecionada}}</option>
                     </select>
                 </div>
                 <div class="form-group mt-3">
                     <label for="motivoVoltar">Motivo para voltar etapa</label>
-                    <input type="text" id="motivoVoltar" [(ngModel)]="motivoVoltar" name="motivoVoltar" class="form-control" maxlength="50">
+                    <input type="text" id="motivoVoltar" [(ngModel)]="motivoVoltar" name="motivoVoltar"
+                        class="form-control" maxlength="50">
                 </div>
             </div>
 
